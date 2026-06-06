@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahadev Mobiles</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.contact-card{
+    width:100%;
+    max-width:900px;
+    background:rgba(17,24,39,.95);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:50px 30px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#f59e0b,#f97316);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+}
+
+h1{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.description{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.badges{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:30px 0;
+}
+
+.badges span{
+    background:#1e293b;
+    padding:10px 15px;
+    border-radius:50px;
+    font-size:14px;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.phone{
+    font-size:1.2rem;
+    font-weight:600;
+    color:#fbbf24;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    color:#fff;
+    padding:18px;
+    border-radius:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.call{
+    background:#2563eb;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.instagram{
+    background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+.review{
+    background:#f59e0b;
+}
+
+.stats{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.stat h3{
+    color:#fbbf24;
+    font-size:2rem;
+}
+
+.stat p{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .contact-card{
+        padding:30px 15px;
+        border-radius:20px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .description{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .phone{
+        font-size:1rem;
+    }
+
+    .buttons{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        padding:16px;
+        font-size:16px;
+    }
+
+    .badges span{
+        font-size:12px;
+        padding:8px 12px;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .stat h3{
+        font-size:1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="contact-card">
+
+    <div class="logo">
+        <i class="fas fa-mobile-screen"></i>
+    </div>
+
+    <h1>📱 Mahadev Mobiles</h1>
+
+    <p class="description">
+        Your One-Stop Mobile Store for Smartphones, Accessories,
+        Mobile Repair, Recharge Services, and Latest Gadgets.
+        Trusted by customers for quality products and reliable service.
+    </p>
+
+    <div class="badges">
+        <span>✅ Genuine Products</span>
+        <span>🔧 Expert Repair</span>
+        <span>💰 Best Prices</span>
+        <span>⭐ Trusted Service</span>
+    </div>
+
+    <div class="phone">
+        📞 Call / WhatsApp: +91 80058 44413
+    </div>
+
+    <div class="buttons">
+
+        <a href="tel:+918005844413" class="btn call">
+            <i class="fas fa-phone"></i>
+            Call Now
+        </a>
+
+        <a href="https://wa.me/918005844413" target="_blank" class="btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <a href="https://instagram.com/mahadev_mobile_29" target="_blank" class="btn instagram">
+            <i class="fab fa-instagram"></i>
+            Instagram
+        </a>
+
+        <a href="https://www.google.com/search?q=mahadevmablices" target="_blank" class="btn review">
+            <i class="fab fa-google"></i>
+            Google Reviews
+        </a>
+
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Customer Support</p>
+        </div>
+
+        <div class="stat">
+            <h3>24/7</h3>
+            <p>WhatsApp Contact</p>
+        </div>
+
+        <div class="stat">
+            <h3>⭐</h3>
+            <p>Trusted Service</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
